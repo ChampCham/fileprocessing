@@ -1,0 +1,17 @@
+git clone https://github.com/KrityaLee/iccs207test.git
+cd icss207test
+git checkout -b foobar
+git push origin foobar
+echo "Banyawat Kruythong" >> ./week3/yadayada.txt
+git add yadayada.txt
+git commit -m "Adding My full name"
+git checkout master
+echo "Adding Name added" >> ./week3/yadayada.txt
+git add yadayada.txt
+git commit -m "Adding Name added"
+git merge foobar
+open ./week3/yadayada.txt   //IN ORDER TO SOLVE THE CONFLICT PROBLEM
+git add yadayada.txt
+git commit -m "Solve conflict"
+git merge foobar
+git push origin master
