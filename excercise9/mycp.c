@@ -10,7 +10,7 @@ int main (int argc, char **argv){
     fin = fopen(argv[1], "r");
     fout = fopen(argv[2], "w");
     while ((c = fread(buffer, 1,1000, fin)) > 0){
-        fwrite(buffer,1,c,fout);
+        fwrite(buffer,1,c,fout); 
         printf("%s\n",buffer);    
     }
 

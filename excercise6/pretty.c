@@ -5,7 +5,7 @@ int main (int argc, char **argv){
 	char str[10];
 	int count = 0; 
  	while (scanf("%s %d",str, &n) == 2){
-		if (count == 0){
+        if (count == 0){
 		printf("\n================================");	
 		}
 		printf("\n%s",str);
@@ -22,6 +22,6 @@ int main (int argc, char **argv){
 		}
 		count = count +1;
 	}
-	printf("================================\n");
+	printf("\n================================\n");
 	return 0;
 }
